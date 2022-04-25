@@ -9,3 +9,4 @@ App records sites, trips sightings etc.
 Basic setup with:
  - HomePage split 
  - Firebase added
+
