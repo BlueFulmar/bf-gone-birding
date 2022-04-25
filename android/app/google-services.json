@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "428521027018",
+    "project_id": "bf-gone-birding-6ace8",
+    "storage_bucket": "bf-gone-birding-6ace8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428521027018:android:326c4fb64d5d46edd90b33",
+        "android_client_info": {
+          "package_name": "com.bluefulmar.bf_gone_birding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428521027018-fla4igsef0u1a52eq18uffnpi40pd3ig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp-_wAL8KgYXcTOOH-j0FmRKCFqpLsrLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428521027018-fla4igsef0u1a52eq18uffnpi40pd3ig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
