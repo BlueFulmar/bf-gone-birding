@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:provider/provider.dart';
 
-import 'pages/home_page.dart';
+import 'providers/trip_places.dart';
+import './screens/places/places_list_screen.dart';
+import './screens/places/add_place_screen.dart';
+import './screens/places/place_detail_screen.dart';
 
-Future main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePage(),
+    return ChangeNotifierProvider.value(
+      value: TripPlaces(),
+      child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Great Places',
+          theme: ThemeData(
+            primarySwatch: Colors.indigo,
+            accentColor: Colors.amber,
+          ),
+          home: PlacesListScreen(),
+          routes: {
+            AddPlaceScreen.routeName: (ctx) => AddPlaceScreen(),
+            PlaceDetailScreen.routeName: (ctx) => PlaceDetailScreen(),
+          }),
     );
   }
 }
