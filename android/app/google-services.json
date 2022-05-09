@@ -29,6 +29,13 @@
             {
               "client_id": "428521027018-fla4igsef0u1a52eq18uffnpi40pd3ig.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "428521027018-savvqrq6ak8psmdkmoqegu227va1bmjg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bluefulmar.bfGoneBirding"
+              }
             }
           ]
         }
